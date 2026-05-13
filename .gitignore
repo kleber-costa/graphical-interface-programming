@@ -1,0 +1,41 @@
+# Python cache and outputs
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+ENV/
+**/ENV/
+env/
+**/env/
+
+# VS Code configuration
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# Databases
+*.sqlite3
+*.db
+
+# Python packaging
+*.egg-info/
+**/*.egg-info/
+build/
+**/build/
+dist/
+**/dist/
+.eggs/
+**/.eggs/

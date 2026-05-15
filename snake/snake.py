@@ -1,6 +1,5 @@
 import tkinter as tk
 import random
-import time
 
 # constants
 WIDTH, HEIGHT = 400, 400
@@ -22,6 +21,9 @@ class SnakeGame(tk.Tk):
         super().__init__()
 
         self.canvas = tk.Canvas(self, width=WIDTH, height=HEIGHT, bg=BG_COLOR)
+        self.title("Snake Game")
+        self.resizable(False, False)
+
         self.canvas.pack()
 
         self.snake = [(5, 5)]

@@ -61,7 +61,14 @@ class SnakeGame(tk.Tk):
 
     # Better positioning of food within the limits defined by the four walls
     def draw_food(self):
-        pass
+        x, y = self.food
+        self.canvas.create_oval(
+            x * GRID_SIZE,
+            y * GRID_SIZE,
+            (x + 1) * GRID_SIZE,
+            (y + 1) * GRID_SIZE,
+            fill=FOOD_COLOR
+        )
 
 
     def up(self, event):
@@ -86,7 +93,15 @@ class SnakeGame(tk.Tk):
 
     # Check if the game is over according to the conditions (i) touching one of the walls, (ii) touching one's own body.
     def is_game_over(self):
-        pass
+        new_head = self.snake[0]
+        if (
+            new_head[0] < 0
+            or new_head[0] > WIDTH // GRID_SIZE
+            or new_head[1] < 0
+            or new_head[1] > HEIGHT // GRID_SIZE
+            or new_head in self.snake[1:]
+        ):
+            self.game_over = True
 
 
     def update(self):

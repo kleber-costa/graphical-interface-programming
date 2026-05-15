@@ -6,6 +6,7 @@ Each subdirectory in the repository corresponds to an independent Python project
 
 ## Projects
 
+- [Snake](snake/README.md) - A simple Snake game implemented in Python using Tkinter.
 - [Tic Tac Toe](tic-tac-toe/README.md) - Simple Tic Tac Toe game implemented in Python using Tkinter.
 
 ## How to use

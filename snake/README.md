@@ -1,36 +1,43 @@
 # Snake
 
-Um jogo simples da cobrinha (Snake) implementado em Python usando Tkinter.
+A simple Snake game implemented in Python using Tkinter.
 
-## Visão geral
+## Overview
 
-Este projeto implementa uma interface gráfica para jogar Snake. A cobrinha se move em uma grade, cresce ao comer a comida e o jogo termina quando a cobrinha colide com as paredes ou com o próprio corpo.
+This project provides a graphical interface to play Snake. The snake moves on a grid, grows when it eats food, and the game ends when the snake collides with the walls or with its own body.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
-- Tkinter (geralmente incluído na instalação padrão do Python)
+- Tkinter (usually included with the standard Python installation)
 
-## Como executar
+## How to run
 
-1. Abra um terminal na pasta `snake`.
-2. Execute:
+1. Open a terminal in the `snake` folder.
+2. Run:
 
 ```bash
 python snake.py
 ```
 
-## Como jogar
+## How to play
 
-- Use as setas do teclado para controlar a direção da cobrinha (↑ ↓ ← →).
-- Cada vez que a cobrinha come a comida vermelha, a pontuação aumenta e a cobrinha cresce.
-- O jogo termina se a cobrinha tocar uma das paredes ou colidir com seu próprio corpo.
+- Use the arrow keys to control the snake direction (↑ ↓ ← →).
+- Each time the snake eats the red food, the score increases and the snake grows.
+- The current score is shown at the top-left corner as "Score: X".
+- The game ends if the snake touches a wall or collides with itself. When this happens, "Game Over" is displayed in the center of the window.
 
-## Estrutura do projeto
+## Interface and behavior
 
-- `snake.py` - Implementação principal do jogo usando Tkinter.
+- The game window uses the title "Snake Game" and is non-resizable by default.
+- Food is drawn as a red oval on the grid.
+- Colors, grid size and speed can be adjusted via constants at the top of `snake.py`.
 
-## Observações
+## Project structure
 
-- A velocidade e o tamanho da grade podem ser ajustados através das constantes no início de `snake.py` (`WIDTH`, `HEIGHT`, `GRID_SIZE`, `SPEED`).
-- O jogo é para um jogador (controle manual); não há IA implementada.
+- `snake.py` - Main game implementation using Tkinter.
+
+## Notes
+
+- Adjust `WIDTH`, `HEIGHT`, `GRID_SIZE`, `SPEED`, `BG_COLOR`, `SNAKE_COLOR`, and `FOOD_COLOR` in `snake.py` to customize the game.
+- The game is designed for a single human player; no AI is implemented.

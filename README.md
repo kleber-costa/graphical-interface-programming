@@ -9,6 +9,7 @@ Each subdirectory in the repository corresponds to an independent Python project
 - [Snake](snake/README.md) - A simple Snake game implemented in Python using Tkinter.
 - [Tic Tac Toe](tic-tac-toe/README.md) - Simple Tic Tac Toe game implemented in Python using Tkinter.
 - [Pong](pong/README.md) - A simple Pong game implemented in Python using Tkinter.
+- [Pomodoro](pomodoro/README.md) - A Pomodoro timer application implemented in Python using Tkinter.
 
 ## How to use
 
